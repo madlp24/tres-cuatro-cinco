@@ -1,20 +1,18 @@
 const reservationUrl = "https://menupp.co/trescuatrocinco/booking/venue/MrO2svW7FCkLsW7eEXes";
 const menuUrl = "https://menupp.co/trescuatrocinco/venue/MrO2svW7FCkLsW7eEXes/menu/XbM1KCYgW78NaqKi90kr";
 
-document.querySelectorAll("[data-reservation-link]").forEach((link) => {
-  link.setAttribute("href", reservationUrl);
-});
+for (const link of document.querySelectorAll("[data-reservation-link]")) {
+  link.href = reservationUrl;
+  link.target = "_blank";
+  link.rel = "noreferrer";
+}
 
-document.querySelectorAll("[data-menu-link]").forEach((link) => {
-  if (menuUrl) {
-    link.setAttribute("href", menuUrl);
-    link.classList.remove("is-hidden");
-    link.setAttribute("target", "_blank");
-    link.setAttribute("rel", "noreferrer");
-  } else {
-    link.classList.add("is-hidden");
-  }
-});
+for (const link of document.querySelectorAll("[data-menu-link]")) {
+  link.href = menuUrl;
+  link.target = "_blank";
+  link.rel = "noreferrer";
+  link.classList.remove("is-hidden");
+}
 
 const brandLogo = document.querySelector("[data-brand-logo]");
 const brandWordmark = document.querySelector("[data-brand-wordmark]");
@@ -32,11 +30,11 @@ if (brandLogo && brandWordmark) {
 }
 
 const menuToggle = document.querySelector(".menu-toggle");
-const menu = document.querySelector("#site-menu");
+const navLinks = document.querySelector(".nav-links");
 
-if (menuToggle && menu) {
+if (menuToggle && navLinks) {
   menuToggle.addEventListener("click", () => {
-    const isOpen = menu.classList.toggle("is-open");
+    const isOpen = navLinks.classList.toggle("is-open");
     menuToggle.setAttribute("aria-expanded", String(isOpen));
   });
 }
@@ -51,7 +49,7 @@ if (newsletterForm && feedback) {
     const formData = new FormData(newsletterForm);
     const name = formData.get("name");
 
-    feedback.textContent = `Gracias${name ? `, ${name}` : ""}. Por ahora este formulario no guarda datos todavia; el siguiente paso es conectarlo a Brevo para almacenar suscriptores reales.`;
+    feedback.textContent = `Gracias${name ? `, ${name}` : ""}. Esta parte quedara conectada a Brevo en el siguiente paso.`;
     newsletterForm.reset();
   });
 }

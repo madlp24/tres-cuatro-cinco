@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto | Tres Cuatro Cinco steakhouse</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <div class="topbar-inner">
+          <a class="brand" href="index.html">
+            <img class="brand-logo is-hidden" src="assets/logo.png" alt="Logo de Tres Cuatro Cinco" data-brand-logo />
+            <span class="brand-wordmark" data-brand-wordmark><strong>TRES CUATRO CINCO</strong><span>steakhouse</span></span>
+          </a>
+          <button class="menu-toggle" type="button" aria-expanded="false">Menu</button>
+          <nav class="nav-links">
+            <a href="index.html">Inicio</a>
+            <a href="experiencia.html">Experiencia</a>
+            <a href="galeria.html">Galeria</a>
+            <a href="#" data-menu-link>Menu</a>
+            <a href="newsletter.html">Newsletter</a>
+            <a class="active" href="contacto.html">Contacto</a>
+            <a class="button" href="#" data-reservation-link>Reservar</a>
+          </nav>
+        </div>
+      </header>
+
+      <main class="container">
+        <section class="page-hero">
+          <p class="eyebrow">Contacto y ubicacion</p>
+          <h1 class="page-title">Todo el acceso práctico, en una sola página.</h1>
+        </section>
+
+        <section class="page-section">
+          <div class="contact-grid">
+            <div class="contact-card">
+              <h3>Visitanos</h3>
+              <p>Calle 69A # 5-81, Chapinero, Bogota, Colombia</p>
+              <p><a href="https://maps.app.goo.gl/BziA9Z4vaCRumhRZ7" target="_blank" rel="noreferrer">Abrir en Google Maps</a></p>
+              <p><a href="mailto:reservas@trescuatrocinco.com">reservas@trescuatrocinco.com</a></p>
+              <p><a href="tel:+573232384660">+57 323 238 4660</a></p>
+              <div class="page-actions">
+                <a class="button" href="#" data-reservation-link>Reservar</a>
+                <a class="button button-ghost" href="#" data-menu-link>Ver menu</a>
+              </div>
+            </div>
+            <div class="map-card">
+              <iframe title="Mapa de Tres Cuatro Cinco steakhouse" src="https://www.google.com/maps?q=Calle%2069A%20%23%205-81,%20Chapinero,%20Bogota,%20Colombia&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="footer-grid">
+          <div class="footer-panel"><p class="eyebrow">Reservas</p><p><a href="#" data-reservation-link>Ir a reservar</a></p></div>
+          <div class="footer-panel"><p class="eyebrow">Menu</p><p><a href="#" data-menu-link>Ir al menu</a></p></div>
+        </div>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

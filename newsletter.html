@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Newsletter | Tres Cuatro Cinco steakhouse</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <div class="topbar-inner">
+          <a class="brand" href="index.html">
+            <img class="brand-logo is-hidden" src="assets/logo.png" alt="Logo de Tres Cuatro Cinco" data-brand-logo />
+            <span class="brand-wordmark" data-brand-wordmark><strong>TRES CUATRO CINCO</strong><span>steakhouse</span></span>
+          </a>
+          <button class="menu-toggle" type="button" aria-expanded="false">Menu</button>
+          <nav class="nav-links">
+            <a href="index.html">Inicio</a>
+            <a href="experiencia.html">Experiencia</a>
+            <a href="galeria.html">Galeria</a>
+            <a href="#" data-menu-link>Menu</a>
+            <a class="active" href="newsletter.html">Newsletter</a>
+            <a href="contacto.html">Contacto</a>
+            <a class="button" href="#" data-reservation-link>Reservar</a>
+          </nav>
+        </div>
+      </header>
+
+      <main class="container">
+        <section class="page-hero">
+          <div class="newsletter-layout">
+            <div class="newsletter-panel">
+              <p class="eyebrow">Newsletter</p>
+              <h1 class="page-title">Mantengamos el contacto sin ensuciar la experiencia del sitio.</h1>
+              <p>Esta página separa la suscripción del home para que la entrada sea más limpia. El siguiente paso será conectar este formulario a Brevo y guardar allí los datos reales.</p>
+            </div>
+            <div class="newsletter-panel">
+              <form class="newsletter-form" id="newsletter-form">
+                <label>Nombre<input type="text" name="name" placeholder="Tu nombre" required /></label>
+                <label>Correo<input type="email" name="email" placeholder="nombre@correo.com" required /></label>
+                <label>Telefono<input type="tel" name="phone" placeholder="+57 300 000 0000" /></label>
+                <button class="button" type="submit">Quiero recibir novedades</button>
+                <p class="form-feedback" id="form-feedback" aria-live="polite"></p>
+              </form>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="footer-grid">
+          <div class="footer-panel"><p class="eyebrow">Siguiente paso</p><p>Conectar este formulario a Brevo para capturar suscriptores reales.</p></div>
+          <div class="footer-panel"><p class="eyebrow">Menu</p><p><a href="#" data-menu-link>Ver menu</a></p></div>
+        </div>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

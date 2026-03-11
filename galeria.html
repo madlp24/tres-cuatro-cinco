@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galeria | Tres Cuatro Cinco steakhouse</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <div class="topbar-inner">
+          <a class="brand" href="index.html">
+            <img class="brand-logo is-hidden" src="assets/logo.png" alt="Logo de Tres Cuatro Cinco" data-brand-logo />
+            <span class="brand-wordmark" data-brand-wordmark><strong>TRES CUATRO CINCO</strong><span>steakhouse</span></span>
+          </a>
+          <button class="menu-toggle" type="button" aria-expanded="false">Menu</button>
+          <nav class="nav-links">
+            <a href="index.html">Inicio</a>
+            <a href="experiencia.html">Experiencia</a>
+            <a class="active" href="galeria.html">Galeria</a>
+            <a href="#" data-menu-link>Menu</a>
+            <a href="newsletter.html">Newsletter</a>
+            <a href="contacto.html">Contacto</a>
+            <a class="button" href="#" data-reservation-link>Reservar</a>
+          </nav>
+        </div>
+      </header>
+
+      <main class="container">
+        <section class="page-hero">
+          <p class="eyebrow">Fotografia</p>
+          <h1 class="page-title">Una galeria con más protagonismo visual.</h1>
+        </section>
+
+        <section class="page-section">
+          <div class="gallery-grid">
+            <figure class="gallery-item tall"><img src="assets/images/img-11.jpg" alt="Plato principal" /></figure>
+            <figure class="gallery-item"><img src="assets/images/img-10.jpg" alt="Detalle gastronómico" /></figure>
+            <figure class="gallery-item"><img src="assets/images/img-13.jpg" alt="Presentación del producto" /></figure>
+            <figure class="gallery-item wide"><img src="assets/images/img-17.jpg" alt="Experiencia gastronómica" /></figure>
+            <figure class="gallery-item"><img src="assets/images/img-03.jpg" alt="Preparación culinaria" /></figure>
+            <figure class="gallery-item"><img src="assets/images/img-06.jpg" alt="Fuego y técnica" /></figure>
+            <figure class="gallery-item wide"><img src="assets/images/img-15.jpg" alt="Emplatado de Tres Cuatro Cinco" /></figure>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="footer-grid">
+          <div class="footer-panel"><p class="eyebrow">Menu</p><p><a href="#" data-menu-link>Ir al menu</a></p></div>
+          <div class="footer-panel"><p class="eyebrow">Contacto</p><p><a href="contacto.html">Ubicacion, mapa y reservas</a></p></div>
+        </div>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

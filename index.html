@@ -4,299 +4,111 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tres Cuatro Cinco steakhouse</title>
-    <meta
-      name="description"
-      content="Tres Cuatro Cinco steakhouse: carnes de calidad superior, fuego, cava de maduracion y una experiencia calida en Bogota."
-    />
+    <meta name="description" content="Tres Cuatro Cinco steakhouse: alta cocina, carnes de calidad superior y una experiencia refinada en Bogota." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="site-shell">
-      <header class="hero" id="inicio">
-        <nav class="topbar">
-          <a class="brand" href="#inicio" aria-label="Ir al inicio">
-            <img
-              class="brand-logo is-hidden"
-              src="assets/logo.png"
-              alt="Logo de Tres Cuatro Cinco steakhouse"
-              data-brand-logo
-            />
-            <span class="brand-text brand-text-full" data-brand-wordmark>
-              <strong>TRES CUATR° CINC°</strong>
+    <div class="page-shell">
+      <header class="topbar">
+        <div class="topbar-inner">
+          <a class="brand" href="index.html" aria-label="Ir al inicio">
+            <img class="brand-logo is-hidden" src="assets/logo.png" alt="Logo de Tres Cuatro Cinco" data-brand-logo />
+            <span class="brand-wordmark" data-brand-wordmark>
+              <strong>TRES CUATRO CINCO</strong>
               <span>steakhouse</span>
             </span>
           </a>
-          <button
-            class="menu-toggle"
-            type="button"
-            aria-expanded="false"
-            aria-controls="site-menu"
-          >
-            Menu
-          </button>
-          <div class="menu" id="site-menu">
-            <a href="#concepto">Esencia</a>
-            <a href="#experiencia">Experiencia</a>
-            <a href="#menu">Pilares</a>
-            <a href="#galeria">Galeria</a>
-            <a href="#newsletter">Newsletter</a>
-            <a href="#contacto">Contacto</a>
-            <a class="menu-link is-hidden" href="#" data-menu-link>Ver menu</a>
-            <a
-              class="button button-sm"
-              href="https://menupp.co/trescuatrocinco/booking/venue/MrO2svW7FCkLsW7eEXes"
-              target="_blank"
-              rel="noreferrer"
-              data-reservation-link
-              >Reservar</a
-            >
-          </div>
-        </nav>
-
-        <div class="hero-grid">
-          <section class="hero-copy">
-            <p class="eyebrow">Vivir la cultura de la maduracion</p>
-            <h1>MAESTROS DEL FUEGO, LA CARNE Y LA MESA.</h1>
-            <p class="lead">
-              Tres Cuatro Cinco es un steakhouse de calidad superior: intenso,
-              calido, rustico y experto. Esta nueva version ya usa fotografias
-              reales del restaurante para que la experiencia se sienta mas viva,
-              mas honesta y mucho mas cercana a la marca.
-            </p>
-            <div class="hero-actions">
-              <a
-                class="button"
-                href="https://menupp.co/trescuatrocinco/booking/venue/MrO2svW7FCkLsW7eEXes"
-                target="_blank"
-                rel="noreferrer"
-                data-reservation-link
-                >Reservar mesa</a
-              >
-              <a class="button button-ghost" href="#newsletter"
-                >Unirme al newsletter</a
-              >
-              <a class="button button-ghost menu-link is-hidden" href="#" data-menu-link
-                >Ver menu</a
-              >
-            </div>
-            <ul class="hero-facts" aria-label="Puntos destacados">
-              <li>Cava de maduracion</li>
-              <li>Coccion al carbon y fuego de lena</li>
-              <li>Servicio atento y ambiente calido</li>
-            </ul>
-          </section>
-
-          <section class="hero-panels" aria-label="Presentacion visual">
-            <article class="panel panel-tall hero-photo-main">
-              <p>A fuego</p>
-              <h2>El producto ahora si se muestra con imagen real.</h2>
-            </article>
-            <article class="panel panel-dark hero-photo-side">
-              <p>Buen espacio</p>
-              <h2>Visuales calidos, honestos y sin stock.</h2>
-            </article>
-            <article class="panel accent hero-photo-detail">
-              <p>Excelente servicio</p>
-              <h2>Reservas activas con tu plataforma externa.</h2>
-            </article>
-          </section>
+          <button class="menu-toggle" type="button" aria-expanded="false">Menu</button>
+          <nav class="nav-links">
+            <a class="active" href="index.html">Inicio</a>
+            <a href="experiencia.html">Experiencia</a>
+            <a href="galeria.html">Galeria</a>
+            <a href="#" data-menu-link>Menu</a>
+            <a href="newsletter.html">Newsletter</a>
+            <a href="contacto.html">Contacto</a>
+            <a class="button" href="#" data-reservation-link>Reservar</a>
+          </nav>
         </div>
       </header>
 
-      <main>
-        <section class="section intro" id="concepto">
-          <div class="section-heading">
-            <p class="eyebrow">Esencia de marca</p>
-            <h2>Un steakhouse premium para amantes de la buena carne, los buenos momentos y la mejor compania.</h2>
-          </div>
-          <div class="intro-layout">
-            <article class="story-card">
-              <span>01</span>
-              <h3>Producto</h3>
-              <p>
-                El manual deja claro que el producto es protagonista. Por eso el
-                sitio prioriza carne, tecnica, maduracion y trazabilidad.
-              </p>
-            </article>
-            <article class="story-card">
-              <span>02</span>
-              <h3>Fuego</h3>
-              <p>
-                La identidad visual se apoya en luces, sombras, contraste y un
-                rojo encendido que remite al carbon y al calor.
-              </p>
-            </article>
-            <article class="story-card">
-              <span>03</span>
-              <h3>Ambiente</h3>
-              <p>
-                Todo apunta a una sensacion calida y acogedora, pero con porte:
-                cenas, celebraciones, negocios y ocasiones memorables.
-              </p>
-            </article>
-          </div>
-        </section>
-
-        <section class="section experience" id="experiencia">
-          <div class="experience-copy">
-            <p class="eyebrow">La experiencia 345</p>
-            <h2>Honesta, autentica, fuerte y calida.</h2>
-            <p>
-              El brand book define una voz basada en cuatro pilares: carnes y
-              cava de maduracion, fuego, ambiente y servicio. Esta home ya esta
-              organizada con esa misma logica y usando imagenes reales para que
-              se sienta mas propia.
-            </p>
-            <p>
-              Tambien quitamos cualquier guiño a gift cards y mantenemos el foco
-              en lo que hoy si existe: reservas externas, captura de leads y una
-              narrativa de marca mas premium.
-            </p>
-          </div>
-          <div class="experience-visual" aria-hidden="true">
-            <div class="visual-card visual-a"></div>
-            <div class="visual-card visual-b"></div>
-            <div class="visual-card visual-c"></div>
-          </div>
-        </section>
-
-        <section class="section offerings" id="menu">
-          <div class="section-heading">
-            <p class="eyebrow">Pilares del sitio</p>
-            <h2>La web queda pensada para vender experiencia, no solo platos.</h2>
-          </div>
-          <div class="offer-grid">
-            <article class="offer-card">
-              <p class="offer-kicker">Carnes y cava</p>
-              <h3>Maduraciones, cortes y razas como diferencial real.</h3>
-              <p>
-                Este bloque sirve para contar la especialidad de la casa y dejar
-                espacio a fotos de carne cruda, cocida y procesos de cava.
-              </p>
-            </article>
-            <article class="offer-card">
-              <p class="offer-kicker">A fuego</p>
-              <h3>La tecnica como parte del espectaculo.</h3>
-              <p>
-                Aqui vamos a destacar la belleza del fuego, la lena, el carbon y
-                el dominio tecnico que menciona el manual.
-              </p>
-            </article>
-            <article class="offer-card">
-              <p class="offer-kicker">Espacio y servicio</p>
-              <h3>Una ocasion que se siente cercana y bien atendida.</h3>
-              <p>
-                Espacio ideal para mostrar ambiente, cocteleria, mesas y ese
-                caracter social y familiar que define a la marca.
-              </p>
-            </article>
-          </div>
-        </section>
-
-        <section class="section gallery" id="galeria">
-          <div class="section-heading">
-            <p class="eyebrow">Galeria real</p>
-            <h2>Las imagenes del restaurante ya entran a la experiencia del sitio.</h2>
-          </div>
-          <div class="gallery-grid">
-            <figure class="gallery-item tall">
-              <img src="assets/images/img-11.jpg" alt="Plato de Tres Cuatro Cinco steakhouse" />
+      <main class="container">
+        <section class="page-hero">
+          <div class="hero-grid">
+            <figure class="hero-media">
+              <img src="assets/images/img-11.jpg" alt="Plato insignia de Tres Cuatro Cinco steakhouse" />
             </figure>
-            <figure class="gallery-item">
-              <img src="assets/images/img-10.jpg" alt="Corte servido en Tres Cuatro Cinco steakhouse" />
-            </figure>
-            <figure class="gallery-item">
-              <img src="assets/images/img-13.jpg" alt="Detalle de producto en Tres Cuatro Cinco steakhouse" />
-            </figure>
-            <figure class="gallery-item wide">
-              <img src="assets/images/img-17.jpg" alt="Experiencia gastronomica en Tres Cuatro Cinco steakhouse" />
-            </figure>
+            <div class="hero-copy">
+              <p class="eyebrow">Alta cocina a fuego</p>
+              <h1 class="page-title">Una mesa elegante, intensa y precisa.</h1>
+              <p>
+                Rediseñamos la entrada para que respire mejor: menos texto,
+                imágenes reales con protagonismo y navegación directa hacia cada
+                universo del restaurante.
+              </p>
+              <div class="hero-actions">
+                <a class="button" href="#" data-reservation-link>Reservar</a>
+                <a class="button button-ghost" href="#" data-menu-link>Ver menu</a>
+              </div>
+            </div>
           </div>
         </section>
 
-        <section class="section reservation-banner">
-          <div>
-            <p class="eyebrow">Reservas</p>
-            <h2>La web ya conecta directamente con tu pagina real de reservas.</h2>
-          </div>
-          <div class="reservation-actions">
-            <a
-              class="button"
-              href="https://menupp.co/trescuatrocinco/booking/venue/MrO2svW7FCkLsW7eEXes"
-              target="_blank"
-              rel="noreferrer"
-              data-reservation-link
-              >Ir a reservas</a
-            >
-            <a class="button button-ghost" href="#" data-menu-link>Ver menu</a>
+        <section class="page-section">
+          <div class="feature-grid">
+            <a class="feature-card" href="experiencia.html">
+              <p class="eyebrow">La casa</p>
+              <h3>Experiencia</h3>
+              <p>Producto, fuego, servicio y la forma en que se vive Tres Cuatro Cinco.</p>
+            </a>
+            <a class="feature-card" href="galeria.html">
+              <p class="eyebrow">Visuales</p>
+              <h3>Galeria</h3>
+              <p>Una selección fotográfica más protagonista y mejor distribuida.</p>
+            </a>
+            <a class="feature-card" href="contacto.html">
+              <p class="eyebrow">Visitanos</p>
+              <h3>Contacto</h3>
+              <p>Reservas, ubicación, mapa y accesos rápidos del restaurante.</p>
+            </a>
           </div>
         </section>
 
-        <section class="section newsletter" id="newsletter">
-          <div class="newsletter-copy">
-            <p class="eyebrow">Base de datos</p>
-            <h2>Captura de newsletter lista para conectar con el servicio que elijas.</h2>
-            <p>
-              Importante: en este momento el formulario no guarda datos en
-              ninguna base real. Solo muestra un mensaje visual. En la siguiente
-              fase lo conectamos a Brevo para que nombres, correos y telefonos
-              queden almacenados correctamente.
-            </p>
+        <section class="page-section">
+          <div class="split-layout">
+            <figure class="split-media">
+              <img src="assets/images/img-10.jpg" alt="Servicio y presentación en Tres Cuatro Cinco" />
+            </figure>
+            <div class="split-copy">
+              <p class="eyebrow">Una home mas ligera</p>
+              <h2>Ahora el inicio presenta, no lo cuenta todo.</h2>
+              <p>
+                La página principal queda enfocada en provocar deseo y ordenar la navegación. El contenido más profundo ahora vive en páginas separadas para que la experiencia se sienta más premium y menos pesada.
+              </p>
+              <div class="page-actions">
+                <a class="button button-ghost" href="experiencia.html">Explorar experiencia</a>
+              </div>
+            </div>
           </div>
-
-          <form class="newsletter-form" id="newsletter-form">
-            <label>
-              Nombre
-              <input type="text" name="name" placeholder="Tu nombre" required />
-            </label>
-            <label>
-              Correo
-              <input
-                type="email"
-                name="email"
-                placeholder="nombre@correo.com"
-                required
-              />
-            </label>
-            <label>
-              Telefono
-              <input type="tel" name="phone" placeholder="+57 300 000 0000" />
-            </label>
-            <button class="button" type="submit">Quiero recibir novedades</button>
-            <p class="form-feedback" id="form-feedback" aria-live="polite"></p>
-          </form>
         </section>
       </main>
 
-      <footer class="footer" id="contacto">
-        <div>
-          <p class="eyebrow">Tres Cuatro Cinco steakhouse</p>
-          <h2>Ubicacion, reservas y acceso rapido al restaurante.</h2>
-        </div>
-        <div class="footer-info">
-          <p><strong>Direccion</strong></p>
-          <p>Calle 69A # 5-81, Chapinero, Bogota, Colombia</p>
-          <p><a href="https://maps.app.goo.gl/BziA9Z4vaCRumhRZ7" target="_blank" rel="noreferrer">Abrir en Google Maps</a></p>
-          <p><a href="mailto:reservas@trescuatrocinco.com">reservas@trescuatrocinco.com</a></p>
-          <p><a href="tel:+573232384660">+57 323 238 4660</a></p>
-        </div>
-        <div class="map-card">
-          <iframe
-            title="Mapa de Tres Cuatro Cinco steakhouse"
-            src="https://www.google.com/maps?q=Calle%2069A%20%23%205-81,%20Chapinero,%20Bogota,%20Colombia&output=embed"
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
+      <footer class="site-footer">
+        <div class="footer-grid">
+          <div class="footer-panel">
+            <p class="eyebrow">Tres Cuatro Cinco</p>
+            <p>Steakhouse de alta cocina en Bogota. Reservas activas, menú en línea y navegación renovada por secciones.</p>
+          </div>
+          <div class="footer-panel">
+            <p><strong>Direccion</strong></p>
+            <p>Calle 69A # 5-81, Chapinero, Bogota, Colombia</p>
+            <p><a href="contacto.html">Ver mapa y contacto</a></p>
+          </div>
         </div>
       </footer>
     </div>
-
     <script src="script.js"></script>
   </body>
 </html>
