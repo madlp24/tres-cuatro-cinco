@@ -21,9 +21,8 @@
       <header class="hero" id="inicio">
         <nav class="topbar">
           <a class="brand" href="#inicio" aria-label="Ir al inicio">
-            <span class="brand-mark">345</span>
-            <span class="brand-text">
-              <strong>TRES CUATRO CINCO</strong>
+            <span class="brand-text brand-text-full">
+              <strong>TRES CUATR° CINC°</strong>
               <span>steakhouse</span>
             </span>
           </a>
@@ -39,8 +38,10 @@
             <a href="#concepto">Esencia</a>
             <a href="#experiencia">Experiencia</a>
             <a href="#menu">Pilares</a>
+            <a href="#galeria">Galeria</a>
             <a href="#newsletter">Newsletter</a>
             <a href="#contacto">Contacto</a>
+            <a class="menu-link is-hidden" href="#" data-menu-link>Ver menu</a>
             <a
               class="button button-sm"
               href="https://menupp.co/trescuatrocinco/booking/venue/MrO2svW7FCkLsW7eEXes"
@@ -58,9 +59,9 @@
             <h1>MAESTROS DEL FUEGO, LA CARNE Y LA MESA.</h1>
             <p class="lead">
               Tres Cuatro Cinco es un steakhouse de calidad superior: intenso,
-              calido, rustico y experto. Esta nueva version del sitio toma como
-              base el brand book para contar una experiencia honesta, poderosa y
-              memorable desde el primer scroll.
+              calido, rustico y experto. Esta nueva version ya usa fotografias
+              reales del restaurante para que la experiencia se sienta mas viva,
+              mas honesta y mucho mas cercana a la marca.
             </p>
             <div class="hero-actions">
               <a
@@ -74,6 +75,9 @@
               <a class="button button-ghost" href="#newsletter"
                 >Unirme al newsletter</a
               >
+              <a class="button button-ghost menu-link is-hidden" href="#" data-menu-link
+                >Ver menu</a
+              >
             </div>
             <ul class="hero-facts" aria-label="Puntos destacados">
               <li>Cava de maduracion</li>
@@ -83,15 +87,15 @@
           </section>
 
           <section class="hero-panels" aria-label="Presentacion visual">
-            <article class="panel panel-tall">
+            <article class="panel panel-tall hero-photo-main">
               <p>A fuego</p>
-              <h2>Una marca donde el producto habla sin maquillaje.</h2>
+              <h2>El producto ahora si se muestra con imagen real.</h2>
             </article>
-            <article class="panel panel-dark">
+            <article class="panel panel-dark hero-photo-side">
               <p>Buen espacio</p>
-              <h2>Rustico, elegante y acogedor.</h2>
+              <h2>Visuales calidos, honestos y sin stock.</h2>
             </article>
-            <article class="panel accent">
+            <article class="panel accent hero-photo-detail">
               <p>Excelente servicio</p>
               <h2>Reservas activas con tu plataforma externa.</h2>
             </article>
@@ -140,8 +144,8 @@
             <p>
               El brand book define una voz basada en cuatro pilares: carnes y
               cava de maduracion, fuego, ambiente y servicio. Esta home ya esta
-              organizada con esa misma logica para que despues podamos cargar el
-              contenido final y las fotos reales sin rehacer la estructura.
+              organizada con esa misma logica y usando imagenes reales para que
+              se sienta mas propia.
             </p>
             <p>
               Tambien quitamos cualquier guiño a gift cards y mantenemos el foco
@@ -189,6 +193,27 @@
           </div>
         </section>
 
+        <section class="section gallery" id="galeria">
+          <div class="section-heading">
+            <p class="eyebrow">Galeria real</p>
+            <h2>Las imagenes del restaurante ya entran a la experiencia del sitio.</h2>
+          </div>
+          <div class="gallery-grid">
+            <figure class="gallery-item tall">
+              <img src="assets/images/img-11.jpg" alt="Plato de Tres Cuatro Cinco steakhouse" />
+            </figure>
+            <figure class="gallery-item">
+              <img src="assets/images/img-10.jpg" alt="Corte servido en Tres Cuatro Cinco steakhouse" />
+            </figure>
+            <figure class="gallery-item">
+              <img src="assets/images/img-13.jpg" alt="Detalle de producto en Tres Cuatro Cinco steakhouse" />
+            </figure>
+            <figure class="gallery-item wide">
+              <img src="assets/images/img-17.jpg" alt="Experiencia gastronomica en Tres Cuatro Cinco steakhouse" />
+            </figure>
+          </div>
+        </section>
+
         <section class="section reservation-banner">
           <div>
             <p class="eyebrow">Reservas</p>
@@ -209,9 +234,10 @@
             <p class="eyebrow">Base de datos</p>
             <h2>Captura de newsletter lista para conectar con el servicio que elijas.</h2>
             <p>
-              Dejamos la experiencia de registro lista en frontend. En la
-              siguiente iteracion podemos conectarla a Mailchimp, Brevo o el
-              proveedor que prefieras, sin tocar la estructura visual.
+              Importante: en este momento el formulario no guarda datos en
+              ninguna base real. Solo muestra un mensaje visual. En la siguiente
+              fase lo conectamos a Mailchimp, Brevo o Formspree para que los
+              correos si queden almacenados.
             </p>
           </div>
 
@@ -242,7 +268,7 @@
       <footer class="footer" id="contacto">
         <div>
           <p class="eyebrow">Tres Cuatro Cinco steakhouse</p>
-          <h2>Una base lista para crecer con contenido, fotografias reales y deployment publico.</h2>
+          <h2>Una base lista para crecer con mas fotografias, menu real y newsletter conectado.</h2>
         </div>
         <div class="footer-info">
           <p>Direccion, telefono, horarios y redes sociales se pueden reemplazar aqui con los datos finales.</p>

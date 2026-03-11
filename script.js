@@ -1,7 +1,17 @@
 const reservationUrl = "https://menupp.co/trescuatrocinco/booking/venue/MrO2svW7FCkLsW7eEXes";
+const menuUrl = "";
 
 document.querySelectorAll("[data-reservation-link]").forEach((link) => {
   link.setAttribute("href", reservationUrl);
+});
+
+document.querySelectorAll("[data-menu-link]").forEach((link) => {
+  if (menuUrl) {
+    link.setAttribute("href", menuUrl);
+    link.classList.remove("is-hidden");
+  } else {
+    link.classList.add("is-hidden");
+  }
 });
 
 const menuToggle = document.querySelector(".menu-toggle");
@@ -24,7 +34,7 @@ if (newsletterForm && feedback) {
     const formData = new FormData(newsletterForm);
     const name = formData.get("name");
 
-    feedback.textContent = `Gracias${name ? `, ${name}` : ""}. Ya dejamos este formulario listo para conectarlo a tu herramienta de newsletter.`;
+    feedback.textContent = `Gracias${name ? `, ${name}` : ""}. Por ahora este formulario no guarda datos todavia; falta conectarlo al servicio de newsletter que elijas.`;
     newsletterForm.reset();
   });
 }

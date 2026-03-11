@@ -3,7 +3,6 @@
   --red: #ed1c24;
   --red-deep: #9f0f15;
   --gray: #f1f2f2;
-  --sand: #c7c7c7;
   --panel: rgba(9, 9, 9, 0.88);
   --panel-soft: rgba(255, 255, 255, 0.04);
   --line: rgba(241, 242, 242, 0.12);
@@ -34,6 +33,11 @@ a {
   text-decoration: none;
 }
 
+img {
+  display: block;
+  width: 100%;
+}
+
 .hero,
 .section,
 .footer {
@@ -60,25 +64,7 @@ a {
   gap: 0.9rem;
 }
 
-.brand-mark {
-  display: grid;
-  place-items: center;
-  width: 3.2rem;
-  height: 3.2rem;
-  border: 1px solid rgba(237, 28, 36, 0.45);
-  border-radius: 999px;
-  background: radial-gradient(circle, rgba(237, 28, 36, 0.25), rgba(237, 28, 36, 0.04));
-  color: var(--gray);
-  font-family: "Oswald", sans-serif;
-  font-size: 1.25rem;
-  letter-spacing: 0.12em;
-}
-
-.brand-text {
-  display: grid;
-  gap: 0.1rem;
-}
-
+.brand-text,
 .brand-text strong,
 .menu a:not(.button),
 .button,
@@ -94,16 +80,18 @@ a {
   font-family: "Oswald", sans-serif;
 }
 
-.brand-text strong {
-  font-size: 1.1rem;
-  letter-spacing: 0.12em;
+.brand-text-full strong {
+  display: block;
+  font-size: 1.55rem;
+  letter-spacing: 0.14em;
+  line-height: 0.95;
 }
 
-.brand-text span {
+.brand-text-full span {
   color: rgba(241, 242, 242, 0.72);
   font-size: 0.8rem;
   text-transform: uppercase;
-  letter-spacing: 0.28em;
+  letter-spacing: 0.3em;
 }
 
 .menu-toggle {
@@ -128,6 +116,10 @@ a {
   font-size: 0.95rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
+}
+
+.menu-link.is-hidden {
+  display: none;
 }
 
 .button {
@@ -245,18 +237,16 @@ a {
   border: 1px solid var(--line);
   border-radius: 1.5rem;
   overflow: hidden;
-  background:
-    linear-gradient(180deg, rgba(0, 0, 0, 0.16), rgba(0, 0, 0, 0.82)),
-    linear-gradient(135deg, rgba(237, 28, 36, 0.16), rgba(255, 255, 255, 0.02)),
-    url("https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1400&q=80") center/cover;
   box-shadow: var(--shadow);
+  background-position: center;
+  background-size: cover;
 }
 
 .panel::after {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.86));
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.88));
 }
 
 .panel > * {
@@ -286,18 +276,16 @@ a {
   min-height: 400px;
 }
 
-.panel-dark {
-  background:
-    linear-gradient(180deg, rgba(0, 0, 0, 0.18), rgba(0, 0, 0, 0.88)),
-    linear-gradient(135deg, rgba(255, 255, 255, 0.05), rgba(237, 28, 36, 0.08)),
-    url("https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=1200&q=80") center/cover;
+.hero-photo-main {
+  background-image: url("assets/images/img-11.jpg");
 }
 
-.accent {
-  background:
-    linear-gradient(180deg, rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.84)),
-    linear-gradient(135deg, rgba(237, 28, 36, 0.36), rgba(159, 15, 21, 0.1)),
-    url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80") center/cover;
+.hero-photo-side {
+  background-image: url("assets/images/img-10.jpg");
+}
+
+.hero-photo-detail {
+  background-image: url("assets/images/img-13.jpg");
 }
 
 .section {
@@ -332,12 +320,11 @@ a {
 .offer-card,
 .newsletter-form,
 .reservation-banner,
-.footer {
+.footer,
+.gallery-item {
   border: 1px solid var(--line);
   border-radius: 1.5rem;
-  background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.01)),
-    var(--panel);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.01)), var(--panel);
   box-shadow: var(--shadow);
 }
 
@@ -389,12 +376,12 @@ a {
   border-radius: 1.5rem;
   border: 1px solid var(--line);
   box-shadow: var(--shadow);
+  background-position: center;
+  background-size: cover;
 }
 
 .visual-a {
-  background:
-    linear-gradient(180deg, rgba(0, 0, 0, 0.18), rgba(0, 0, 0, 0.8)),
-    url("https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=900&q=80") center/cover;
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.18), rgba(0, 0, 0, 0.8)), url("assets/images/img-03.jpg");
 }
 
 .visual-b,
@@ -403,15 +390,36 @@ a {
 }
 
 .visual-b {
-  background:
-    linear-gradient(180deg, rgba(237, 28, 36, 0.08), rgba(0, 0, 0, 0.82)),
-    url("https://images.unsplash.com/photo-1528605248644-14dd04022da1?auto=format&fit=crop&w=900&q=80") center/cover;
+  background-image: linear-gradient(180deg, rgba(237, 28, 36, 0.08), rgba(0, 0, 0, 0.82)), url("assets/images/img-06.jpg");
 }
 
 .visual-c {
-  background:
-    linear-gradient(180deg, rgba(237, 28, 36, 0.12), rgba(0, 0, 0, 0.82)),
-    url("https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=900&q=80") center/cover;
+  background-image: linear-gradient(180deg, rgba(237, 28, 36, 0.12), rgba(0, 0, 0, 0.82)), url("assets/images/img-15.jpg");
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr 0.8fr;
+  gap: 1rem;
+}
+
+.gallery-item {
+  margin: 0;
+  overflow: hidden;
+}
+
+.gallery-item img {
+  height: 100%;
+  min-height: 280px;
+  object-fit: cover;
+}
+
+.gallery-item.tall {
+  grid-row: span 2;
+}
+
+.gallery-item.wide {
+  grid-column: span 2;
 }
 
 .reservation-banner {
@@ -485,12 +493,19 @@ a {
   .newsletter,
   .intro-layout,
   .offer-grid,
+  .gallery-grid,
   .footer {
     grid-template-columns: 1fr;
   }
 
   .experience-visual {
     min-height: auto;
+  }
+
+  .gallery-item.tall,
+  .gallery-item.wide {
+    grid-row: auto;
+    grid-column: auto;
   }
 
   .reservation-banner {
@@ -525,6 +540,10 @@ a {
 @media (max-width: 640px) {
   .hero {
     padding-top: 0.5rem;
+  }
+
+  .brand-text-full strong {
+    font-size: 1.2rem;
   }
 
   .hero h1 {
