@@ -21,7 +21,13 @@
       <header class="hero" id="inicio">
         <nav class="topbar">
           <a class="brand" href="#inicio" aria-label="Ir al inicio">
-            <span class="brand-text brand-text-full">
+            <img
+              class="brand-logo is-hidden"
+              src="assets/logo.png"
+              alt="Logo de Tres Cuatro Cinco steakhouse"
+              data-brand-logo
+            />
+            <span class="brand-text brand-text-full" data-brand-wordmark>
               <strong>TRES CUATR° CINC°</strong>
               <span>steakhouse</span>
             </span>
@@ -219,14 +225,17 @@
             <p class="eyebrow">Reservas</p>
             <h2>La web ya conecta directamente con tu pagina real de reservas.</h2>
           </div>
-          <a
-            class="button"
-            href="https://menupp.co/trescuatrocinco/booking/venue/MrO2svW7FCkLsW7eEXes"
-            target="_blank"
-            rel="noreferrer"
-            data-reservation-link
-            >Ir a reservas</a
-          >
+          <div class="reservation-actions">
+            <a
+              class="button"
+              href="https://menupp.co/trescuatrocinco/booking/venue/MrO2svW7FCkLsW7eEXes"
+              target="_blank"
+              rel="noreferrer"
+              data-reservation-link
+              >Ir a reservas</a
+            >
+            <a class="button button-ghost" href="#" data-menu-link>Ver menu</a>
+          </div>
         </section>
 
         <section class="section newsletter" id="newsletter">
@@ -236,8 +245,8 @@
             <p>
               Importante: en este momento el formulario no guarda datos en
               ninguna base real. Solo muestra un mensaje visual. En la siguiente
-              fase lo conectamos a Mailchimp, Brevo o Formspree para que los
-              correos si queden almacenados.
+              fase lo conectamos a Brevo para que nombres, correos y telefonos
+              queden almacenados correctamente.
             </p>
           </div>
 
@@ -268,14 +277,22 @@
       <footer class="footer" id="contacto">
         <div>
           <p class="eyebrow">Tres Cuatro Cinco steakhouse</p>
-          <h2>Una base lista para crecer con mas fotografias, menu real y newsletter conectado.</h2>
+          <h2>Ubicacion, reservas y acceso rapido al restaurante.</h2>
         </div>
         <div class="footer-info">
-          <p>Direccion, telefono, horarios y redes sociales se pueden reemplazar aqui con los datos finales.</p>
-          <p>
-            <a href="mailto:reservas@trescuatrocinco.com">reservas@trescuatrocinco.com</a>
-          </p>
-          <p><a href="tel:+570000000000">+57 000 000 0000</a></p>
+          <p><strong>Direccion</strong></p>
+          <p>Calle 69A # 5-81, Chapinero, Bogota, Colombia</p>
+          <p><a href="https://maps.app.goo.gl/BziA9Z4vaCRumhRZ7" target="_blank" rel="noreferrer">Abrir en Google Maps</a></p>
+          <p><a href="mailto:reservas@trescuatrocinco.com">reservas@trescuatrocinco.com</a></p>
+          <p><a href="tel:+573232384660">+57 323 238 4660</a></p>
+        </div>
+        <div class="map-card">
+          <iframe
+            title="Mapa de Tres Cuatro Cinco steakhouse"
+            src="https://www.google.com/maps?q=Calle%2069A%20%23%205-81,%20Chapinero,%20Bogota,%20Colombia&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
         </div>
       </footer>
     </div>
