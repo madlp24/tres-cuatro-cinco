@@ -1,5 +1,9 @@
-const reservationUrl = "https://menupp.co/trescuatrocinco/booking/venue/MrO2svW7FCkLsW7eEXes";
+﻿const reservationUrl = "https://menupp.co/trescuatrocinco/booking/venue/MrO2svW7FCkLsW7eEXes";
 const menuUrl = "https://menupp.co/trescuatrocinco/venue/MrO2svW7FCkLsW7eEXes/menu/XbM1KCYgW78NaqKi90kr";
+const socialUrls = {
+  instagram: "",
+  facebook: "",
+};
 
 for (const link of document.querySelectorAll("[data-reservation-link]")) {
   link.href = reservationUrl;
@@ -11,7 +15,20 @@ for (const link of document.querySelectorAll("[data-menu-link]")) {
   link.href = menuUrl;
   link.target = "_blank";
   link.rel = "noreferrer";
-  link.classList.remove("is-hidden");
+}
+
+for (const link of document.querySelectorAll("[data-social]")) {
+  const key = link.getAttribute("data-social");
+  const url = socialUrls[key];
+
+  if (url) {
+    link.href = url;
+    link.target = "_blank";
+    link.rel = "noreferrer";
+    link.classList.remove("is-hidden");
+  } else {
+    link.classList.add("is-hidden");
+  }
 }
 
 const brandLogo = document.querySelector("[data-brand-logo]");
@@ -36,20 +53,5 @@ if (menuToggle && navLinks) {
   menuToggle.addEventListener("click", () => {
     const isOpen = navLinks.classList.toggle("is-open");
     menuToggle.setAttribute("aria-expanded", String(isOpen));
-  });
-}
-
-const newsletterForm = document.querySelector("#newsletter-form");
-const feedback = document.querySelector("#form-feedback");
-
-if (newsletterForm && feedback) {
-  newsletterForm.addEventListener("submit", (event) => {
-    event.preventDefault();
-
-    const formData = new FormData(newsletterForm);
-    const name = formData.get("name");
-
-    feedback.textContent = `Gracias${name ? `, ${name}` : ""}. Esta parte quedara conectada a Brevo en el siguiente paso.`;
-    newsletterForm.reset();
   });
 }
