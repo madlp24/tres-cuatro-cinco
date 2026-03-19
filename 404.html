@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página no encontrada | Tres Cuatro Cinco Steakhouse</title>
+    <meta name="robots" content="noindex" />
+    <link rel="icon" href="assets/images/logo.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .error-page {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 70vh;
+        text-align: center;
+        padding: 2rem;
+      }
+      .error-code {
+        font-family: "Oswald", sans-serif;
+        font-size: clamp(6rem, 20vw, 12rem);
+        line-height: 1;
+        color: var(--accent);
+        margin: 0;
+        letter-spacing: -0.02em;
+      }
+      .error-message {
+        font-family: "Oswald", sans-serif;
+        font-size: clamp(1.2rem, 3vw, 1.8rem);
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: var(--muted);
+        margin: 1rem 0 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page-shell">
+
+      <header class="topbar">
+        <a class="brand" href="index.html">
+          <img class="brand-logo" src="assets/images/logo.png" alt="Logo de Tres Cuatro Cinco" />
+          <span class="brand-wordmark">
+            <strong>TRES CUATRO CINCO</strong>
+            <span>steakhouse</span>
+          </span>
+        </a>
+      </header>
+
+      <div class="error-page">
+        <p class="error-code">404</p>
+        <p class="error-message">Esta página no existe</p>
+        <a class="button" href="index.html">Volver al inicio</a>
+      </div>
+
+      <footer class="site-footer">
+        <div class="footer-grid">
+          <div class="footer-block">
+            <p class="footer-title">Tres Cuatro Cinco</p>
+            <p>Steakhouse de alta cocina en Bogotá.</p>
+          </div>
+          <div class="footer-block">
+            <p class="footer-title">Accesos</p>
+            <p><a href="galeria.html">Galería</a></p>
+            <p><a href="contacto.html">Contacto</a></p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

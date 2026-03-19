@@ -750,6 +750,16 @@ img {
   }
 }
 
+.newsletter-success {
+  color: #ff8c90;
+  font-family: "Oswald", sans-serif;
+  font-size: 0.95rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 1rem 0;
+}
+
 /* ── Pantallas muy pequeñas (≤ 400px) ── */
 @media (max-width: 400px) {
   .brand-wordmark {

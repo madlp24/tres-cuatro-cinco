@@ -76,6 +76,8 @@
       ]
     }
     </script>
+    <link rel="icon" href="assets/images/logo.png" type="image/png" />
+    <link rel="apple-touch-icon" href="assets/images/logo.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -174,13 +176,15 @@
             <h2 class="block-title" data-i18n="newsletter.title">Menú de temporada, eventos y novedades.</h2>
             <p data-i18n="newsletter.desc">Entérate primero de nuevos platos, cartas de temporada y eventos especiales en Tres Cuatro Cinco.</p>
           </div>
-          <form class="newsletter-form" method="POST" action="https://c52e4613.sibforms.com/serve/MUIFAE0UQxG6qMHRls9drvVS0Iie2AhAHcEKugf_PXrv4eYDvvr1qPHzzwTDfMUxNdYxoSaKuHSXCo4L3PvjJPIVfU01LYh3FHxginB8GNl1n4zD5ZYHFjnzxqtPG3G_HfiFmoP9sNLV5R0Tph9r-Pf68TbV6V9mtxJHN744gcfWzConHSM7POcNBzIt7XBP1oixicXu70rGw8hlnw==" target="_blank">
+          <form class="newsletter-form" id="newsletterForm" method="POST" action="https://c52e4613.sibforms.com/serve/MUIFAE0UQxG6qMHRls9drvVS0Iie2AhAHcEKugf_PXrv4eYDvvr1qPHzzwTDfMUxNdYxoSaKuHSXCo4L3PvjJPIVfU01LYh3FHxginB8GNl1n4zD5ZYHFjnzxqtPG3G_HfiFmoP9sNLV5R0Tph9r-Pf68TbV6V9mtxJHN744gcfWzConHSM7POcNBzIt7XBP1oixicXu70rGw8hlnw==" target="brevo-hidden">
             <input type="text" name="email_address_check" value="" style="display:none" />
             <input type="hidden" name="locale" value="es" />
             <input type="hidden" name="html_type" value="simple" />
             <input type="email" name="EMAIL" placeholder="Tu correo electrónico" required autocomplete="email" data-i18n-placeholder="newsletter.placeholder" />
             <button type="submit" class="button" data-i18n="newsletter.cta">Suscribirme</button>
           </form>
+          <iframe name="brevo-hidden" style="display:none" aria-hidden="true"></iframe>
+          <p class="newsletter-success" id="newsletterSuccess" style="display:none" data-i18n="newsletter.success">¡Gracias! Ya estás suscrito a nuestras novedades.</p>
         </div>
       </section>
 

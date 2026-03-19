@@ -76,6 +76,19 @@ if (slides.length) {
   carouselStart();
 }
 
+// Newsletter
+const newsletterForm = document.getElementById("newsletterForm");
+const newsletterSuccess = document.getElementById("newsletterSuccess");
+
+if (newsletterForm) {
+  newsletterForm.addEventListener("submit", () => {
+    setTimeout(() => {
+      newsletterForm.style.display = "none";
+      if (newsletterSuccess) newsletterSuccess.style.display = "block";
+    }, 800);
+  });
+}
+
 // ── Traducciones ──────────────────────────────────────────────────────────────
 const translations = {
   es: {
@@ -116,6 +129,7 @@ const translations = {
     "newsletter.desc": "Entérate primero de nuevos platos, cartas de temporada y eventos especiales en Tres Cuatro Cinco.",
     "newsletter.placeholder": "Tu correo electrónico",
     "newsletter.cta": "Suscribirme",
+    "newsletter.success": "¡Gracias! Ya estás suscrito a nuestras novedades.",
     // Footer compartido
     "footer.brand.desc": "Steakhouse de alta cocina en Bogotá. Menú en línea, reservas activas y acceso rápido a la ubicación.",
     "footer.accesos": "Accesos",
@@ -191,6 +205,7 @@ const translations = {
     "newsletter.desc": "Be the first to know about new dishes, seasonal menus and special events at Tres Cuatro Cinco.",
     "newsletter.placeholder": "Your email address",
     "newsletter.cta": "Subscribe",
+    "newsletter.success": "Thank you! You're now subscribed to our news.",
     // Shared footer
     "footer.brand.desc": "Fine dining steakhouse in Bogotá. Online menu, active reservations and quick access to our location.",
     "footer.accesos": "Quick links",
